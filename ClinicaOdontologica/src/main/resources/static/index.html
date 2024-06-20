@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Frontend</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>API Frontend</h1>
+
+    <!-- Pacientes -->
+    <section id="pacientes">
+      <h2>Pacientes</h2>
+      <button onclick="listarPacientes()">Listar Pacientes</button>
+      <div id="pacientes-lista"></div>
+      <hr />
+      <h3>Registrar Paciente</h3>
+      <form id="registrar-paciente-form" onsubmit="registrarPaciente(event)">
+        <input type="text" id="paciente-nombre" placeholder="Nombre" />
+        <input type="text" id="paciente-apellido" placeholder="Apellido" />
+        <input type="text" id="paciente-dni" placeholder="DNI" />
+        <input
+          type="date"
+          id="paciente-fechaIngreso"
+          placeholder="Fecha de ingreso"
+        />
+        <input type="text" id="paciente-calle" placeholder="Calle" />
+        <input type="text" id="paciente-numero" placeholder="Numero" />
+        <input type="text" id="paciente-localidad" placeholder="Localidad" />
+        <input type="text" id="paciente-provincia" placeholder="Provincia" />
+        <button type="submit">Registrar</button>
+      </form>
+      <hr />
+      <h3>Eliminar Paciente</h3>
+      <form id="eliminar-paciente-form" onsubmit="eliminarPaciente(event)">
+        <input type="number" id="paciente-id" placeholder="ID" />
+        <button type="submit">Eliminar</button>
+      </form>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

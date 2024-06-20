@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+button {
+  margin: 10px 0;
+}
+
+form input {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#pacientes-lista,
+#odontologos-lista,
+#turnos-lista {
+  margin-top: 20px;
+}
